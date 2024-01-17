@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Breeze Bold';
+    src: url('../public/fonts/Breeze-Sans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Breeze Regular';
+    src: url('../public/fonts/Breeze-Sans-Regular.ttf');
+}
+
+.breeze-bold {
+    font-family: 'Breeze Bold';
+}
+
+.breeze-regular {
+    font-family: 'Breeze Regular';
+}
