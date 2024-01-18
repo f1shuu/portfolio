@@ -14,7 +14,7 @@ export default function Home() {
         <>
             <div id='#home' className='bg-gradient-to-r from-[#000] to-[#376DEC] h-[100vh] px-[15%] text-left'>
                 <div className='h-[100%] flex flex-col items-center justify-center'>
-                    <span className='type-hello lg:text-6xl md:text-6xl sm:text-5xl font-mono text-4xl text-[#F0F6F6]' />
+                    <span className='type-hello lg:text-6xl md:text-6xl sm:text-5xl text-3xl font-mono text-[#F0F6F6]' />
                     <div className='wrapper flex breeze-regular md:h-10 h-8 lg:text-3xl md:text-3xl sm:text-2xl text-xl lg:pt-10 md:pt-10 sm:pt-5 pt-3 lg:pb-20 md:pb-20 sm:pb-10 pb-6'>
                         <div className='words'>
                             {rotatingTexts.map((text, index) => (
