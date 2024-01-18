@@ -7,7 +7,7 @@ export default function Footer() {
             id='#contact'
         >
             <p className='flex items-center'>
-                Copyright Filip Szulżycki ©️ 2024. All rights reserved.
+                © 2024 Filip Szulżycki. All rights reserved.
             </p>
             <div className='flex items-center text-5xl text-[#2A2D34]'>
                 <a href='https://linkedin.com/in/fszulzycki/'>

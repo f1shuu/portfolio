@@ -1,7 +1,8 @@
 # Portfolio Web App made with React
 
-##View live website [here](https://f1shuu.github.io).
+## View live website under [f1shuu.github.io](https://f1shuu.github.io).
 
-This project was initially created with [Create React App](https://github.com/facebook/create-react-app).
-[Tailwind CSS](https://tailwindcss.com/docs/installation) was used for styling.
+Created with [create-react-app](https://github.com/facebook/create-react-app), styled with [Tailwind CSS](https://tailwindcss.com/docs/installation).
 Also thanks to [@mattpfeffer](https://github.com/mattpfeffer) for creating a nice [library](https://github.com/mattpfeffer/tailwind-typewriter) I used.
+
+<sub>© 2024 Filip Szulżycki. All rights reserved.</sub>
