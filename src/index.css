@@ -14,7 +14,7 @@
 .word {
   display: flex;
   justify-content: center;
-  color: white;
+  color: #F0F6F6;
   animation: spinWordsAnimation 8s infinite;
 }
 
