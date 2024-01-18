@@ -1,29 +1,34 @@
 import { Link } from 'react-scroll';
 import { AiFillFilePdf } from 'react-icons/ai';
 
-export default function Header() {
-    const handleDownload = () => {
-        const pdfFilePath = 'CV.pdf';
-        const link = document.createElement('a');
-        link.href = pdfFilePath;
-        link.download = 'CV-Filip-Szulżycki.pdf';
-        link.click();
-    };
+const handleDownload = () => {
+    const pdfFilePath = 'CV.pdf';
+    const link = document.createElement('a');
+    link.href = pdfFilePath;
+    link.download = 'CV-Filip-Szulżycki.pdf';
+    link.click();
+};
 
+const buttonsData = [
+    { link: '#home', text: 'Home' },
+    { lnik: '#portfolio', text: 'Portfolio' },
+    { link: '#experience', text: 'Experience' },
+    { link: '#skills', text: 'Skills' },
+    { link: '#contact', text: 'Contact' },
+    { action: handleDownload, text: 'Download CV' }
+];
+
+export default function Header() {
     return (
         <>
-            <div className='flex justify-end items-center bg-[#F0F6F6] lg:w-[100vw] h-[10vh] pr-20 fixed shadow-lg'>
-                <div>
-                    <Link to='#home' spy={true} smooth={true} duration={500} className='cursor-pointer px-5 py-2 breeze-bold text-[18px] text-[#2A2D34] hover:border-b-4 hover:border-[#376dec]'>Home</Link>
-                    <Link to='#portfolio' spy={true} smooth={true} duration={500} className='cursor-pointer px-5 py-2 breeze-bold text-[18px] text-[#2A2D34] hover:border-b-4 hover:border-[#376dec]'>Portfolio</Link>
-                    <Link to='#experience' spy={true} smooth={true} duration={500} className='cursor-pointer px-5 py-2 breeze-bold text-[18px] text-[#2A2D34] hover:border-b-4 hover:border-[#376dec]'>Experience</Link>
-                    <Link to='#skills' spy={true} smooth={true} duration={500} className='cursor-pointer px-5 py-2 breeze-bold text-[18px] text-[#2A2D34] hover:border-b-4 hover:border-[#376dec]'>Skills</Link>
-                    <Link to='#contact' spy={true} smooth={true} duration={500} className='cursor-pointer px-5 py-2 breeze-bold text-[18px] text-[#2A2D34] hover:border-b-4 hover:border-[#376dec]'>Contact</Link>
-                    <button onClick={handleDownload} className='inline-flex items-center cursor-pointer text-[18px] text-[#2A2D34] breeze-bold px-5 py-3 border-4 border-[#376DEC] ml-10 rounded-xl'>
-                        Download CV
-                        <AiFillFilePdf className='ml-2 text-3xl text-[#2A2D34]' />
+            <div className='flex lg:justify-end justify-center items-center w-[100vw] h-[10vh] bg-[#F0F6F6] lg:px-20 md:px-10 sm:px-6 fixed shadow-lg'>
+                {buttonsData.map((element) => (
+                    <button onClick={element.action} className='inline-flex items-center whitespace-nowrap relative border-none transition ease-in-out overflow-hidden lg:px-5 md:px-4 sm:px-3 px-2 py-3 group'>
+                        <Link to={element.link} spy={true} smooth={true} duration={500} className='cursor-pointer breeze-bold lg:text-xl md:text-lg sm:text-base text-sm text-[#2A2D34]'>{element.text}</Link>
+                        {element.text === 'Download CV' && <AiFillFilePdf className='ml-2 text-3xl text-[#2A2D34]' />}
+                        <span className='absolute left-1/2 transform -translate-x-1/2 bottom-0 w-0 h-1 bg-[#376DEC] transition-all duration-500 ease-in-out group-hover:w-full' />
                     </button>
-                </div>
+                ))}
             </div>
         </>
     )

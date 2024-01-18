@@ -2,6 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Roboto', sans-serif;
+/* About me texts */
+.wrapper {
+  box-sizing: content-box;
+}
+
+.words {
+  overflow: hidden;
+}
+
+.word {
+  display: flex;
+  justify-content: center;
+  color: white;
+  animation: spinWordsAnimation 8s infinite;
+}
+
+@keyframes spinWordsAnimation {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-100%);
+  }
+  50%, 70% {
+    transform: translateY(-200%);
+  }
+  75%, 95% {
+    transform: translateY(-300%);
+  }
+}
+
+/* Learn more button arrow */
+.arrows {
+  height: 20px;
+  overflow: hidden;
+}
+
+.lower-arrow {
+  visibility: hidden;
+  transform: translateY(0);
+}
+
+.link:hover .upper-arrow {
+  transform: translateY(-100%);
+  animation: upperArrowAnimation 0.5s ease-out forwards;
+}
+
+.link:hover .lower-arrow {
+  visibility: visible;
+  transform: translateY(-100%);
+  animation: lowerArrowAnimation 0.5s ease-out forwards;
+}
+
+@keyframes upperArrowAnimation {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes lowerArrowAnimation {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(100%);
+  }
 }
