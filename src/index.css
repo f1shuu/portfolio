@@ -7,11 +7,11 @@
   box-sizing: content-box;
 }
 
-.words {
+.texts {
   overflow: hidden;
 }
 
-.word {
+.text {
   display: flex;
   justify-content: center;
   color: #F0F6F6;

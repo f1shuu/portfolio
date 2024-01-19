@@ -1,4 +1,8 @@
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiOutlineMail, AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
+
+const handleSendEmail = () => {
+    window.location.href = 'mailto:szulzyckifilip@gmail.com';
+};
 
 export default function Footer() {
     return (
@@ -9,12 +13,13 @@ export default function Footer() {
             <p className='flex items-center text-center'>
                 © 2024 Filip Szulżycki. All rights reserved.
             </p>
-            <div className='flex items-center text-5xl text-[#2A2D34]'>
+            <div className='cursor-pointer flex items-center text-5xl text-[#2A2D34]'>
+                <AiOutlineMail onClick={handleSendEmail} />
                 <a href='https://linkedin.com/in/fszulzycki/'>
-                    <AiFillLinkedin />
+                    <AiOutlineLinkedin />
                 </a>
                 <a href='https://github.com/f1shuu'>
-                    <AiFillGithub />
+                    <AiOutlineGithub />
                 </a>
             </div>
         </div>
