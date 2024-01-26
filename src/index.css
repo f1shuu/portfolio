@@ -13,8 +13,7 @@
 
 .text {
   display: flex;
-  justify-content: center;
-  color: #F0F6F6;
+  color: #c6c6c6;
   animation: spinWordsAnimation 8s infinite;
 }
 

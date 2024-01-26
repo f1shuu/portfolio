@@ -1,17 +1,8 @@
 @font-face {
-    font-family: 'Breeze Bold';
-    src: url('../public/fonts/Breeze-Sans-Bold.ttf');
+    font-family: 'San Fransisco';
+    src: url('../public/SanFransisco.otf');
 }
 
-@font-face {
-    font-family: 'Breeze Regular';
-    src: url('../public/fonts/Breeze-Sans-Regular.ttf');
-}
-
-.breeze-bold {
-    font-family: 'Breeze Bold';
-}
-
-.breeze-regular {
-    font-family: 'Breeze Regular';
+.sf {
+    font-family: 'San Fransisco';
 }
