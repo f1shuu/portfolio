@@ -48,7 +48,7 @@ export default function Home() {
                             </div>
                         </Link>
                     </div>
-                    <img src={me} alt='' title={'yup, that\'s me :)'} className='w-2/5 rounded-full' />
+                    <img src={me} alt='image' title={'yup, that\'s me :)'} className='w-2/5 rounded-full' />
                 </div>
             </div>
         </>

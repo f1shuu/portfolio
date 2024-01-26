@@ -22,7 +22,9 @@ export default function Header() {
     return (
         <>
             <div className='flex justify-between items-center w-[100vw] lg:h-20 md:h-20 sm:h-16 bg-[#C6C6C6] lg:px-20 md:px-10 sm:px-6 px-2 fixed shadow-lg z-40'>
-                <img src={f} alt='' className='flex items-center lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-10 sm:h-10 w-8 h-8' />
+                <Link to='#home' spy={true} smooth={true} duration={500} className='cursor-pointer flex items-center lg:w-16 lg:h-16 md:w-16 md:h-16 sm:w-10 sm:h-10 w-8 h-8' >
+                    <img alt='logo' src={f} />
+                </Link>
                 <div className='flex items-center'>
                     {buttonsData.map((element, index) => (
                         <Link key={index} to={element.link} spy={true} smooth={true} duration={500} className='cursor-pointer relative transition ease-in-out overflow-hidden lg:px-5 md:px-4 sm:px-3 px-2 py-3 group sf lg:text-xl md:text-lg sm:text-base text-xs text-[#101010]'>
