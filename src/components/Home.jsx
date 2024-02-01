@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import { AiOutlineArrowDown, AiOutlineMail, AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
+import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineTwitter, AiOutlineArrowDown } from 'react-icons/ai';
 import me from '../images/me.png';
 
 const rotatingTexts = [
@@ -8,10 +8,6 @@ const rotatingTexts = [
     'React learner',
     'aspiring developer',
 ];
-
-const handleEmailClick = () => {
-    window.location.href = 'mailto:szulzyckifilip@gmail.com';
-};
 
 export default function Home() {
     return (
@@ -27,12 +23,14 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='cursor-pointer flex lg:mb-10 md:mb-10 sm:mb-5 mb-3 lg:text-4xl md:text-4xl sm:text-2xl text-xl text-[#C6C6C6]'>
-                        <AiOutlineMail onClick={handleEmailClick} className='mx-1' />
                         <a href='https://linkedin.com/in/fszulzycki/' className='mx-1'>
                             <AiOutlineLinkedin />
                         </a>
                         <a href='https://github.com/f1shuu' className='mx-1'>
                             <AiOutlineGithub />
+                        </a>
+                        <a href='https://twitter.com/xf1shu' className='mx-1'>
+                            <AiOutlineTwitter />
                         </a>
                     </div>
                     <Link
